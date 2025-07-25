@@ -7,88 +7,98 @@
     <title>Menù</title>
     <style>
         body {
+            background-color: #fff8b3;
+            color: #000;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
         header {
             position: sticky;
             top: 0;
-            background-color: white;
+            background-color: #fff8b3;
             padding: 10px 20px;
             text-align: center;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
         }
         header img {
             max-height: 80px;
         }
-        section {
-            padding: 20px;
-        }
         h2 {
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-top: 2px dashed #000;
+            padding-top: 20px;
         }
-        .menu-item {
-            margin: 10px 0;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
         }
-        .menu-item img {
-            max-height: 100px;
-            display: block;
-            margin-top: 5px;
+        .allergeni {
+            font-size: 0.9em;
+            margin: 2px 0 10px 10px;
+            color: #333;
+        }
+        .nota {
+            margin-top: 40px;
+            font-size: 0.9em;
+            border-top: 1px solid #000;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo Ristorante/Festa">
+    <img src="logo.png" alt="Logo">
 </header>
 
-<section id="piadine">
-    <h2>Piadine</h2>
-    <div class="menu-item">
-        <strong>Piadina Classica</strong><br>
-        Prosciutto, formaggio<br>
-        <img src="foto/piadina1.jpg" alt="Piadina Classica">
-    </div>
-    <div class="menu-item">
-        <strong>Piadina Vegetariana</strong><br>
-        Verdure grigliate, formaggio<br>
-        <img src="foto/piadina2.jpg" alt="Piadina Vegetariana">
-    </div>
-</section>
+<h2>🫓 PIADINE <span style="font-size: 0.6em;">(impasto disponibile: 🌾 Gluten Free / 🌱 Vegan)</span></h2>
+<div class="item"><span>Salsiccia - Crudo - Cotto - Fontina</span><span>7,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Lattosio, Solfiti, Possibile traccia di Uova</div>
 
-<section id="panini">
-    <h2>Panini</h2>
-    <div class="menu-item">
-        <strong>Panino Hamburger</strong><br>
-        Hamburger, insalata, pomodoro<br>
-        <img src="foto/panino1.jpg" alt="Panino Hamburger">
-    </div>
-</section>
+<div class="item"><span>Verdure Grigliate</span><span>6,00€</span></div>
+<div class="allergeni">→ Con piadina classica: Glutine<br>→ Con piadina gluten free o vegan: Nessun allergene</div>
 
-<section id="snack">
-    <h2>Snack</h2>
-    <div class="menu-item">
-        <strong>Patatine</strong><br>
-        Fritte croccanti<br>
-        <img src="foto/snack1.jpg" alt="Patatine">
-    </div>
-</section>
+<div class="item"><span>Nutella</span><span>5,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Frutta a guscio (nocciole), Soia</div>
 
-<section id="bibite">
-    <h2>Bibite</h2>
-    <div class="menu-item">
-        <strong>Coca-Cola</strong><br>
-        Lattina 33cl<br>
-        <img src="foto/bibita1.jpg" alt="Coca-Cola">
-    </div>
-</section>
+<h2>🍟 SFIZIOSITÀ</h2>
+<div class="item"><span>Patate Fritte</span><span>4,00€</span></div>
+<div class="allergeni">→ Possibile contaminazione da Glutine</div>
+
+<div class="item"><span>Olive Ascolane</span><span>5,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Uova, Carne, Solfiti</div>
+
+<div class="item"><span>Anelli di Cipolla</span><span>5,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Uova</div>
+
+<div class="item"><span>Crema Fritta</span><span>5,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Uova</div>
+
+<div class="item"><span>Prosciutto e Melone</span><span>4,00€</span></div>
+<div class="allergeni">→ Solfiti</div>
+
+<div class="item"><span>Polpette Vegetali 🌱</span><span>6,00€</span></div>
+<div class="allergeni">→ Possibili: Glutine, Soia, Sedano, Frutta a guscio</div>
+
+<h2>🍢 CONI</h2>
+<div class="item"><span>Cono Griglia (Salsiccia, Coppa e Verdure)</span><span>8,00€</span></div>
+<div class="allergeni">→ Solfiti, Possibile traccia di Latte e Glutine</div>
+
+<div class="item"><span>Cono Fritto (Patate Fritte, Olive Ascolane, Anelli di Cipolla, Crema Fritta)</span><span>7,00€</span></div>
+<div class="allergeni">→ Glutine, Latte, Uova, Solfiti</div>
+
+<h2>🍉 FRUTTA E DOLCI</h2>
+<div class="item"><span>Melone</span><span>3,00€</span></div>
+<div class="allergeni">→ Nessun allergene</div>
+
+<div class="item"><span>Gelato</span><span>2,00€</span></div>
+<div class="allergeni">→ Latte, Uova, Soia, Glutine, Frutta a guscio (possibile)</div>
+
+<div class="item"><span>Ghiaccioli</span><span>1,00€</span></div>
+<div class="allergeni">→ Possibili Coloranti, Solfiti</div>
 
 </body>
 </html>
