@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        header img {
+            max-height: 80px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            max-height: 100px;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo Ristorante/Festa">
+</header>
+
+<section id="piadine">
+    <h2>Piadine</h2>
+    <div class="menu-item">
+        <strong>Piadina Classica</strong><br>
+        Prosciutto, formaggio<br>
+        <img src="foto/piadina1.jpg" alt="Piadina Classica">
+    </div>
+    <div class="menu-item">
+        <strong>Piadina Vegetariana</strong><br>
+        Verdure grigliate, formaggio<br>
+        <img src="foto/piadina2.jpg" alt="Piadina Vegetariana">
+    </div>
+</section>
+
+<section id="panini">
+    <h2>Panini</h2>
+    <div class="menu-item">
+        <strong>Panino Hamburger</strong><br>
+        Hamburger, insalata, pomodoro<br>
+        <img src="foto/panino1.jpg" alt="Panino Hamburger">
+    </div>
+</section>
+
+<section id="snack">
+    <h2>Snack</h2>
+    <div class="menu-item">
+        <strong>Patatine</strong><br>
+        Fritte croccanti<br>
+        <img src="foto/snack1.jpg" alt="Patatine">
+    </div>
+</section>
+
+<section id="bibite">
+    <h2>Bibite</h2>
+    <div class="menu-item">
+        <strong>Coca-Cola</strong><br>
+        Lattina 33cl<br>
+        <img src="foto/bibita1.jpg" alt="Coca-Cola">
+    </div>
+</section>
+
+</body>
+</html>
